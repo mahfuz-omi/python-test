@@ -1,0 +1,327 @@
+import _bootlocale
+import mymodule
+
+print("hello omi...how r u doing??")
+int1 = 7
+print(int1)
+int1 = "omi"
+print(int1)
+int1 = float(5)
+print(int1)
+
+
+one = 1
+two = 2
+three = one + two
+print(three)
+
+
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+print(helloworld)
+
+
+print("omi","popy","sumi")
+
+
+a, b = 3, 4
+print(a,b)
+
+
+
+name = "omi" + str(6)
+print(name)
+
+
+# change this code
+mystring = 'hello'
+myfloat = None
+myint = None
+
+# testing code
+if mystring == "hello":
+    print("String: %s" %mystring)
+if isinstance(myfloat, float) and myfloat == 10.0:
+    print("Float: %f" % myfloat)
+if isinstance(myint, int) and myint == 20:
+    print("Integer: %d" % myint)
+
+
+# just like array
+mylist = []
+mylist.append(1)
+mylist.append(2)
+mylist.append("omi")
+print(mylist[0]) # prints 1
+print(mylist[1]) # prints 2
+print(mylist[2]) # prints 3
+
+# prints out 1,2,3
+for x in mylist:
+    print(x)
+
+names = ["John", "Eric", "Jessica"]
+print(names)
+
+# only multiplication supported with str to int operation
+lotsofhellos = "hello" * 10
+print(lotsofhellos)
+
+print([1,2,3] * 3)
+
+
+# lists can be added with each other
+even_numbers = [2,4,6,8]
+odd_numbers = [1,3,5,7]
+all_numbers = odd_numbers + even_numbers
+print(all_numbers)
+
+
+myList = ["omi","popy","omi"]
+print("myList has %d data" %len(myList))
+print("myList has omi %d time" %myList.count("omi"))
+
+
+for x in myList:
+    print(x,1)
+
+
+name = "John"
+age = 23
+print("%s is %d years old." % (name, age))
+
+
+# This prints out: A list: [1, 2, 3]
+mylist = [1,2,3]
+print("A list: %s" % mylist)
+print(" the list is ",myList)
+
+
+astring = "Hello world!"
+print("single quotes are ' '")
+print(len(astring))
+
+
+# str.index returns index of first occurence
+astring = "Hello world!"
+print(astring.index("o"))
+
+
+
+# from index 3 to index 7
+astring = "Hello world!"
+print(astring[3:7])
+print(astring[0])
+
+
+# str function
+astring = "Hello world!"
+print(astring.upper())
+print(astring.lower())
+
+
+
+# character extraction from string
+for x in astring:
+    print(x)
+
+
+# str function, returns boolean
+astring = "Hello world!"
+print(astring.startswith("Hello"))
+print(astring.endswith("asdfasdfasdf"))
+
+
+# spliting works like java
+astring = "Hello world!"
+afewwords = astring.split(" ")
+print(len(afewwords))
+
+print(len(afewwords[0]))
+print(len(afewwords[1]))
+
+
+
+# Python uses boolean variables to evaluate conditions
+x = 2
+print(x == 2) # prints out True
+print(x == 3) # prints out False
+print(x < 3) # prints out True
+
+
+name = "John"
+age = 23
+if name == "John" and age == 23:
+    print("Your name is John, and you are also 23 years old.")
+
+if name == "John" or name == "Rick":
+    print("Your name is either John or Rick.")
+
+
+name = "John"
+if name in ["John", "Rick"]:
+    print("Your name is either John or Rick.")
+
+
+
+# is used as == in java. == used as equals in java
+x = [1,2,3]
+y = [1,2,3]
+print(x == y) # Prints out True
+print(x is y) # Prints out False
+
+
+
+# Prints out the numbers 0,1,2,3,4
+for x in range(5):
+    print(x)
+
+# Prints out 3,4,5
+for x in range(3, 6):
+    print(x)
+
+# Prints out 3,5,7
+for x in range(3, 8, 2):
+    print(x)
+
+
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+
+
+# Prints out 0,1,2,3,4
+
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break
+
+# Prints out only odd numbers - 1,3,5,7,9
+for x in range(10):
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+    print(x)
+
+
+
+# Define our 3 functions
+def my_function():
+    print("Hello From My Function!")
+
+def my_function_with_args(username, greeting):
+    print("Hello, %s , From My Function!, I wish you %s"%(username, greeting))
+
+def sum_two_numbers(a, b):
+    return a + b
+
+# print(a simple greeting)
+my_function()
+
+#prints - "Hello, John Doe, From My Function!, I wish you a great year!"
+my_function_with_args("John Doe", "a great year!")
+
+# after this line x will hold the value 3!
+x = sum_two_numbers(1,2)
+print(x)
+
+
+# define the Vehicle class
+class Vehicle:
+    name = ""
+    kind = "car"
+    color = ""
+    value = 100.00
+    def description(self):
+        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
+        return desc_str
+
+# your code goes here
+car1 = Vehicle()
+car1.name = "Fer"
+car1.color = "red"
+car1.kind = "convertible"
+car1.value = 60000.00
+
+car2 = Vehicle()
+car2.name = "Jump"
+car2.color = "blue"
+car2.kind = "van"
+car2.value = 10000.00
+
+# test code
+print(car1.description())
+print(car2.description())
+
+
+# Dictionary = Map = Associative Array
+phonebook = {}
+phonebook["John"] = 938477566
+phonebook["Jack"] = 938377264
+phonebook["Jill"] = 947662781
+print(phonebook)
+
+
+
+phonebook = {
+    "John" : 938477566,
+    "Jack" : 938377264,
+    "Jill" : 947662781
+}
+print(phonebook)
+
+
+
+phonebook = {"John" : 938477566,"Jack" : 938377264,"Jill" : 947662781}
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" % (name, number))
+
+
+
+del phonebook["John"]
+print(phonebook)
+
+
+if "Jack" in phonebook:
+    print("Jake is listed in the phonebook.")
+if "Jill" not in phonebook:
+    print("Jill is not listed in the phonebook.")
+
+
+print(dir(_bootlocale))
+
+print(_bootlocale)
+
+mymodule.function()
+
+
+# Create 2 new lists height and weight
+height = [1.87,  1.87, 1.82, 1.91, 1.90, 1.85]
+weight = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]
+
+# Import the numpy package as np
+import numpy as np
+
+# Create 2 numpy arrays from height and weight
+np_height = np.array(height)
+np_weight = np.array(weight)
+
+# Calculate bmi
+bmi = np_weight / np_height ** 2
+
+# Print the result
+print(bmi)
+
+print(bmi[bmi > 25])
+
+
+
+
