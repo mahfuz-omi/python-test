@@ -262,7 +262,7 @@ print(car1.description())
 print(car2.description())
 
 
-# Dictionary = Map = Associative Array
+# Dictionary = Map = Associative Array = unordered
 phonebook = {}
 phonebook["John"] = 938477566
 phonebook["Jack"] = 938377264

@@ -1,0 +1,1 @@
+print("omi in cmd")
